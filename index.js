@@ -31,8 +31,6 @@ function createServer () {
     port: PORT
   })
   ws.on('connection', (ws, req) => {
-    doc.del()
-    initDoc()
     share.listen(new WebSocketJSONStream(ws))
   })
 }
