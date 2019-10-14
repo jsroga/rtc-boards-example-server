@@ -6,6 +6,7 @@ const share = new ShareDB()
 
 const connection = share.connect()
 const doc = connection.get('project', '0')
+const PORT = process.env.PORT || 9515;
 
 const initDoc = () => {
   return new Promise(res => doc.create({
@@ -27,7 +28,7 @@ doc.fetch(async err => {
 
 function createServer () {
   const ws = new WebSocket.Server({
-    port: 9515
+    port: PORT
   })
   ws.on('connection', (ws, req) => {
     doc.del()
