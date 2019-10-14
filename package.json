@@ -9,11 +9,9 @@
   },
   "author": "Jacek Sroga",
   "license": "ISC",
-  "devDependencies": {
+  "dependencies": {
+    "websocket-json-stream": "0.0.3",
     "sharedb": "^1.0.0-beta.23",
     "ws": "^7.1.2"
-  },
-  "dependencies": {
-    "websocket-json-stream": "0.0.3"
   }
 }
