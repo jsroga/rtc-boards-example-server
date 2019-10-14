@@ -1,0 +1,18 @@
+{
+  "name": "rtc-board-example-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jacek Sroga",
+  "license": "ISC",
+  "devDependencies": {
+    "sharedb": "^1.0.0-beta.23",
+    "ws": "^7.1.2"
+  },
+  "dependencies": {
+    "websocket-json-stream": "0.0.3"
+  }
+}
